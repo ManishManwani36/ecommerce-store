@@ -7,7 +7,7 @@ import Container from "@/components/ui/container";
 export const revalidate = 0;
 
 export default async function HomePage() {
-  const billboard = await getBillboard("ca203032-13e2-4829-bde6-29f08177adf4");
+  const billboard = await getBillboard("14f81a7a-2169-4c75-9ec7-a239ce55a3f8");
   const products = await getProducts({ isFeatured: true });
   return (
     <Container>
