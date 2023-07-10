@@ -22,7 +22,7 @@ export default function Summary() {
     if (searchParams.get("canceled")) {
       toast.error("Something Went Wrong");
     }
-  }, [searchParams]);
+  }, [searchParams, removeAll]);
 
   const totalPrice = items.reduce((acc, item) => {
     return acc + Number(item.price);
